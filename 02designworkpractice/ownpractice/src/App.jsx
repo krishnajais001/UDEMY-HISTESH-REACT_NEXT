@@ -1,12 +1,23 @@
 import { useState } from 'react'
 import './App.css'
 
-function App() {
+import NavBar from './components/NavBar'
+import Hero from './components/Hero'
+import Card from './components/Card'
+import Footer from './components/Footer'
 
+import plans from './data/Plans'
+
+function App() {
   return (
-   <>
-    <h1>Helo Krishna </h1>
-   </>
+    <>
+      <NavBar />
+      <Hero />
+
+      <Card plansData={plans} />
+
+      <Footer/>
+    </>
   )
 }
 
